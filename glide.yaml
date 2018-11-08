@@ -1,0 +1,8 @@
+package: GameServer
+import:
+- package: github.com/go-stack/stack
+- package: github.com/mattn/go-colorable
+- package: github.com/mattn/go-isatty
+- package: gopkg.in/check.v1
+- package: github.com/kr/pretty
+  version: ~0.1.0
