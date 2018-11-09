@@ -4,8 +4,8 @@ package tools_test
 import (
 	"bytes"
 	"encoding/binary"
+	"github.com/chenjiajun1207/GameServer/Log"
 	. "gopkg.in/check.v1"
-	"lib/Crazy/Network/Tools"
 	"testing"
 )
 
