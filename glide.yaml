@@ -1,5 +1,7 @@
-package: .
+package: GameServer
 import:
 - package: github.com/chenjiajun1207/GameServer
   subpackages:
   - Log
+  - Network/Protocol
+- package: gopkg.in/check.v1
