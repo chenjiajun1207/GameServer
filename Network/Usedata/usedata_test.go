@@ -2,8 +2,8 @@
 package usedata_test
 
 import (
+	"github.com/chenjiajun1207/GameServer/Network/Usedata"
 	. "gopkg.in/check.v1"
-	"lib/Crazy/Network/Usedata"
 	"testing"
 )
 
