@@ -3,9 +3,9 @@ package tools
 import (
 	"bytes"
 	"encoding/binary"
-	"lib/Crazy/Log"
-	"lib/Crazy/Network/Protocol"
-	"lib/Crazy/Network/Usedata"
+	"github.com/chenjiajun1207/GameServer/Log"
+	"github.com/chenjiajun1207/GameServer/Network/Protocol"
+	"github.com/chenjiajun1207/GameServer/Network/Usedata"
 )
 
 func Decode(buf []byte) (*usedata.Usedata, error) {

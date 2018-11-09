@@ -3,7 +3,7 @@ package tools
 import (
 	"bytes"
 	"encoding/binary"
-	"lib/Crazy/Log"
+	"github.com/chenjiajun1207/GameServer/Log"
 )
 
 func Split(data []byte, atEOF bool) (advance int, token []byte, err error) {
