@@ -1,11 +1,14 @@
-hash: 02b4022ed8f66a23159c1a7a11cb12d851804c0cf3eae5a328ef5bddd0668e7c
-updated: 2018-11-09T17:44:44.360019599+08:00
+hash: 32c6b7eab2400a34a559c4898ee79000424f81fa6b80de2c8b22489b5978d2a9
+updated: 2018-11-09T18:34:20.199031462+08:00
 imports:
 - name: github.com/chenjiajun1207/GameServer
-  version: e2c9949530fd80d61b90ebb2c5a448bf232f70da
+  version: 0989b9af8cd10fc1af4b3707e51b73af506228fc
   subpackages:
   - Log
+  - Network/Acceptor
   - Network/Protocol
+  - Network/Tools
+  - Network/Usedata
 - name: github.com/go-stack/stack
   version: 2fee6af1a9795aafbe0253a0cfbdf668e1fb8a9a
 - name: github.com/mattn/go-colorable
@@ -18,4 +21,8 @@ imports:
   - unix
 - name: gopkg.in/check.v1
   version: 788fd78401277ebd861206a03c884797c6ec5541
-testImports: []
+testImports:
+- name: github.com/kr/pretty
+  version: 73f6ac0b30a98e433b289500d779f50c1a6f0712
+- name: github.com/kr/text
+  version: e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f

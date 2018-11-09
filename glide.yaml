@@ -4,4 +4,6 @@ import:
   subpackages:
   - Log
   - Network/Protocol
+  - Network/Usedata
+  - Network/Tools
 - package: gopkg.in/check.v1
