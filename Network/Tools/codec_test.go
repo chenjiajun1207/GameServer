@@ -4,7 +4,7 @@ package tools_test
 import (
 	"bytes"
 	"encoding/binary"
-	"github.com/chenjiajun1207/GameServer/Tools"
+	"github.com/chenjiajun1207/GameServer/Network/Tools"
 	. "gopkg.in/check.v1"
 	"testing"
 )
