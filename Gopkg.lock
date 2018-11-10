@@ -2,19 +2,20 @@
 
 
 [[projects]]
-  branch = "master"
-  digest = "1:8889ef1eab705bd401f97e6acfc1a35b732a82fd5ba7a9cce6056c716f2e3bff"
+  branch = "dep"
+  digest = "1:849504b4b3e5b052f4203ae0eea80bb08a43b2ad975fac2114ca8def0a3ba4de"
   name = "github.com/chenjiajun1207/GameServer"
   packages = [
     "Log",
     "Network/Acceptor",
     "Network/Protocol",
     "Network/Tcpconnection",
+    "Network/Tcpserver",
     "Network/Tools",
     "Network/Usedata",
   ]
   pruneopts = "UT"
-  revision = "0989b9af8cd10fc1af4b3707e51b73af506228fc"
+  revision = "aa43620200ba81bcbc4964d1c24446833c3d5de6"
 
 [[projects]]
   digest = "1:586ea76dbd0374d6fb649a91d70d652b7fe0ccffb8910a77468e7702e7901f3d"
@@ -80,6 +81,7 @@
     "github.com/chenjiajun1207/GameServer/Network/Acceptor",
     "github.com/chenjiajun1207/GameServer/Network/Protocol",
     "github.com/chenjiajun1207/GameServer/Network/Tcpconnection",
+    "github.com/chenjiajun1207/GameServer/Network/Tcpserver",
     "github.com/chenjiajun1207/GameServer/Network/Tools",
     "github.com/chenjiajun1207/GameServer/Network/Usedata",
     "github.com/go-stack/stack",

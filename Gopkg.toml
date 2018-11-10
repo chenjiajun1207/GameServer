@@ -25,11 +25,26 @@
 #   unused-packages = true
 
 
+[[constraint]]
+  branch = "dep"
+  name = "github.com/chenjiajun1207/GameServer"
+
+[[constraint]]
+  name = "github.com/go-stack/stack"
+  version = "1.8.0"
+
+[[constraint]]
+  name = "github.com/mattn/go-colorable"
+  version = "0.0.9"
+
+[[constraint]]
+  name = "github.com/mattn/go-isatty"
+  version = "0.0.4"
+
+[[constraint]]
+  branch = "v1"
+  name = "gopkg.in/check.v1"
+
 [prune]
   go-tests = true
   unused-packages = true
-
-[[constraint]]
-  branch = "deb"
-  name = "github.com/chenjiajun1207/GameServer"
-  version = "0.0.1"
