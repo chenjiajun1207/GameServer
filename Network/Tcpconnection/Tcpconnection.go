@@ -38,7 +38,10 @@ func (this *TcpConnection) Close() {
 }
 
 func (this *TcpConnection) processmessage(buf []byte) {
-	temp, _ := tools.Decode(buf)
+	temp, err := tools.Decode(buf)
+	if err != nil {
+		this.Close()
+	}
 	switch temp.Tag {
 	case PkgHeartbeat:
 		this.heartbeat()
@@ -52,12 +55,20 @@ func (this *TcpConnection) heartbeat() {
 	pkg := usedata.NewUseData(PkgHeartbeat, []byte{})
 	buf, err := pkg.Encode()
 	if err != nil {
+		this.Close()
 		log15.Error("pkg encode err", "err", err)
 		return
 	}
-	this.conn.Write(buf)
+	_, err = this.conn.Write(buf) // why we don't care about the number
+	if err != nil {
+		this.Close()
+		log15.Error("Write", "err", err)
+	}
 }
 
 func (this *TcpConnection) processdata(buf []byte) {
-	this.conn.Write(buf)
+	_, err := this.conn.Write(buf)
+	if err != nil {
+		this.Close()
+	}
 }
