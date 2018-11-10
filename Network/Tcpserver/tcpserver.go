@@ -16,7 +16,7 @@ type TcpServer struct {
 
 func (this *TcpServer) Init() {
 	var err error
-	this.netListen, err = net.Listen("tcp", this.connecturl)
+	this.netListen, err = net.Listen("tcp", this.Connecturl)
 	if err != nil {
 		log15.Error("Listen err", "err", err)
 		return

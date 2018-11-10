@@ -3,7 +3,7 @@
 
 [[projects]]
   branch = "dep"
-  digest = "1:849504b4b3e5b052f4203ae0eea80bb08a43b2ad975fac2114ca8def0a3ba4de"
+  digest = "1:adf95cdf91ba2a60531d91e15e69cb97b8f17f880a314219cb435991b4bdf033"
   name = "github.com/chenjiajun1207/GameServer"
   packages = [
     "Log",
@@ -15,7 +15,7 @@
     "Network/Usedata",
   ]
   pruneopts = "UT"
-  revision = "aa43620200ba81bcbc4964d1c24446833c3d5de6"
+  revision = "e0bffa1854ffcbd78364b124e1f07c764b13cafd"
 
 [[projects]]
   digest = "1:586ea76dbd0374d6fb649a91d70d652b7fe0ccffb8910a77468e7702e7901f3d"
