@@ -3,13 +3,8 @@
 package tcpserver
 
 import (
-	"bufio"
-	"flag"
 	"github.com/chenjiajun1207/GameServer/Log"
-	"github.com/chenjiajun1207/GameServer/Network/Acceptor"
 	"github.com/chenjiajun1207/GameServer/Network/Tcpconnection"
-	"github.com/chenjiajun1207/GameServer/Network/Tools"
-	"github.com/chenjiajun1207/GameServer/Network/Usedata"
 	"net"
 )
 
@@ -39,7 +34,7 @@ func (this *TcpServer) acceptConn(listener net.Listener) bool {
 		log15.Error("Accept err", "err", err)
 		return true
 	}
-	tcpconn := NewTcpConnection(conn)
+	tcpconn := tcpconnection.NewTcpConnection(conn)
 	tcpconn.Start()
 	return false
 }
