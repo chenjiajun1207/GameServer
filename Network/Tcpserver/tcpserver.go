@@ -9,7 +9,7 @@ import (
 )
 
 type TcpServer struct {
-	connecturl string
+	Connecturl string
 	netListen  net.Listener //why not use defer net.Listener.Close()
 	tcpconn    *tcpconnection.TcpConnection
 }
