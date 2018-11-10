@@ -3,12 +3,13 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:f70709943e548c4756edd80e7632cc8e588174a43d26c796fd4660e0767e3770"
+  digest = "1:8889ef1eab705bd401f97e6acfc1a35b732a82fd5ba7a9cce6056c716f2e3bff"
   name = "github.com/chenjiajun1207/GameServer"
   packages = [
     "Log",
     "Network/Acceptor",
     "Network/Protocol",
+    "Network/Tcpconnection",
     "Network/Tools",
     "Network/Usedata",
   ]
@@ -78,6 +79,7 @@
     "github.com/chenjiajun1207/GameServer/Log",
     "github.com/chenjiajun1207/GameServer/Network/Acceptor",
     "github.com/chenjiajun1207/GameServer/Network/Protocol",
+    "github.com/chenjiajun1207/GameServer/Network/Tcpconnection",
     "github.com/chenjiajun1207/GameServer/Network/Tools",
     "github.com/chenjiajun1207/GameServer/Network/Usedata",
     "github.com/go-stack/stack",
