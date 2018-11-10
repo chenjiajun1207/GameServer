@@ -30,5 +30,6 @@
   unused-packages = true
 
 [[constraint]]
-  branch = "master"
+  branch = "deb"
   name = "github.com/chenjiajun1207/GameServer"
+  version = "0.0.1"
